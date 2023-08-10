@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Task5</title>
+   <link rel="stylesheet" href="Task5.css">
+</head>
+
+<body>
+   <div class="container">
+      <h3>Login/Signup Here</h3>
+      <form id="myform">
+         <table>
+            <tr>
+               <td>
+                  <label>Username</label>
+               </td>
+               <td>
+                  <input type="text" name="username" id="username" onblur="req(this)">
+               </td>
+            </tr>
+            <tr>
+               <td>
+                  <label>Password</label>
+               </td>
+               <td>
+                  <input type="password" name="password" id="password" onblur="req(this)">
+               </td>
+            </tr>
+            <tr>
+               <td>
+                  <label>Birth Date</label>
+               </td>
+               <td>
+                  <input type="date" name="birthdate" id="birthdate" onblur="req(this)">
+               </td>
+            </tr>
+            <tr>
+               <td>
+                  <label>Phone No.</label>
+               </td>
+               <td>
+                  <input type="tel" name="phone" id="phone" onblur="req(this)">
+               </td>
+            </tr>
+            <tr>
+               <td>
+                  <label>Email</label>
+               </td>
+               <td>
+                  <input type="email" name="email" id="email" onblur="req(this)">
+               </td>
+            </tr>
+            <tr>
+               <td></td>
+               <td>
+                  <button>Login</button>
+               </td>
+            </tr>
+            <tr>
+               <td></td>
+               <td>
+                  <button>Sign-Up</button>
+               </td>
+            </tr>
+         </table>
+      </form>
+      <h4>Note:- Press F12 for get data in console</h4>
+   </div>
+   <script src="Task5.js"></script>
+</body>
+
+</html>
