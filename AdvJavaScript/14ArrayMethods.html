@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <ul>
+        <li><code>concat()</code></li>
+        <li><code>copyWithin()</code></li>
+        <li><code>every()</code></li>
+        <li><code>filter()</code></li>
+        <li><code>flat()</code></li>
+        <li><code>flatMap()</code></li>
+        <li><code>forEach()</code></li>
+        <li><code>indexOf()</code></li>
+        <li><code>lastIndexOf()</code></li>
+        <li><code>map()</code></li>
+        <li><code>reduce()</code></li>
+        <li><code>reduceRight()</code></li>
+        <li><code>reverse()</code></li>
+        <li><code>slice()</code></li>
+        <li><code>some()</code></li>
+        <li><code>sort()</code></li>
+        <li><code>splice()</code></li>
+    </ul>
+    <script>
+        // const words = ['spray', 'limit', 'elite', 'exuberant', 'destruction', 'present'];
+        // // words.forEach(element => {
+        // //     console.log(element);
+        // // });
+        // let data = words.forEach((element) => {
+        //     return element + "sdfsda"
+        // });
+        // console.log(data);
+        // console.log(words);
+        // let rs = [12,45,65,98,45];
+        // // const result = words.filter((word) => word.length > 6);
+        // const result = words.filter((word) => { return word.length > 6});
+        // const result1 = rs.map((word) => { return word*5});
+        // let rsData = rs.forEach((rsele) => {
+        //     return rsele+ "sdfsda"
+        // });
+
+        // console.log(rs);
+        // console.log(result1);
+        // console.log(rsData);
+
+        const array1 = [1, 2, 3, 4];
+
+        // 0 + 1 + 2 + 3 + 4
+        const initialValue = 0;
+        console.log(array1);
+        const sumWithInitial = array1.reduce((accumulator, currentValue) => {
+            console.log("accumulator 1 ", accumulator, "currentValue 2", currentValue);
+            return accumulator + currentValue, initialValue
+        });
+
+        console.log(sumWithInitial);
+// Expected output: 10
+    </script>
+</body>
+
+</html>
