@@ -1,0 +1,15 @@
+API stands for Application Programming Interface. In the context of APIs, the word Application refers to any software with a distinct function. Interface can be thought of as a contract of service between two applications.
+
+
+
+
+https://levelup.gitconnected.com/3-ways-to-make-an-api-call-in-react-3734d025d92
+
+
+
+https://api.opencagedata.com/geocode/v1/json?q=${city}&key=faed4d9eb29d483a866000c901ccb680
+
+
+
+
+https://api.openweathermap.org/data/2.5/weather?lat=23.0218734&lon=72.5984903&appid=ff431b01e24bf42cc8b9d90009e86b7f

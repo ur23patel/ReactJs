@@ -1,0 +1,10 @@
+fill - Write a method that creates a new array with given values.
+reverse - Write a method that reverts input array.
+compact - Write a method that clears array from all unnecessary elements, like false, undefined, empty strings, zero, null.
+fromPairs - Write a method that returns an object composed of key-value pairs.
+without - Write a method that returns an array without listed values.
+unique - Write a method that returns a duplicate-free array.
+isEqual - Write a method that makes a shallow compare of two arrays and returns true if they are identical.
+flatten - Write a method that turns a deep array into a plain array.
+chunk - Write a method that splits an array into parts of determined size.
+intersection - Write a method that creates an array of unique values that are included in all given arrays

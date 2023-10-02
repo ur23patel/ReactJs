@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div id="disp">Display Data</div>
+    <script>
+        class something{
+            anything(){
+                console.log("kai pan from something class");
+                let data = this.vicharavmatenufunc()
+                document.write(data)
+                console.log(data);
+            }
+            vicharavmatenufunc(){
+                document.write(" maro vichar ")
+                console.log("maro vichar");
+                // document.getElementById("disp").innerHTML = "Data"
+                document.getElementById("disp").append(" append")
+                document.getElementById("disp").prepend(" prepend")
+                document.getElementById("disp").before(" before")
+                document.getElementById("disp").after(" after")
+                return "maan ki baat";
+            }
+        }
+
+        class bijunaam extends something{
+
+        }
+        objectofbijunaam = new bijunaam;
+        objectofbijunaam.anything()
+    </script>
+
+</body>
+</html>

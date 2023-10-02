@@ -1,0 +1,447 @@
+{\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset1 Segoe UI Symbol;}{\f1\fnil\fcharset0 Calibri;}}
+{\*\generator Riched20 10.0.19041}\viewkind4\uc1 
+\pard\sa200\sl276\slmult1\f0\fs22\lang9\u-10179?\u-9004?\f1  Day 3\par
+Booleans\par
+Truthy values\par
+Falsy values\par
+Undefined\par
+Null\par
+Operators\par
+Assignment operators\par
+Arithmetic Operators\par
+Comparison Operators\par
+Logical Operators\par
+Increment Operator\par
+Decrement Operator\par
+Ternary Operators\par
+Operator Precedence\par
+Window Methods\par
+Window alert() method\par
+Window prompt() method\par
+Window confirm() method\par
+Date Object\par
+Creating a time object\par
+Getting full year\par
+Getting month\par
+Getting date\par
+Getting day\par
+Getting hours\par
+Getting minutes\par
+Getting seconds\par
+Getting time\par
+\f0\u-10179?\u-9029?\f1  Day 3: Exercises\par
+Exercises: Level 1\par
+Exercises: Level 2\par
+Exercises: Level 3\par
+\f0\u-10179?\u-9004?\f1  Day 3\par
+Booleans\par
+A boolean data type represents one of the two values:true or false. Boolean value is either true or false. The use of these data types will be clear when you start the comparison operator. Any comparisons return a boolean value which is either true or false.\par
+\par
+Example: Boolean Values\par
+\par
+let isLightOn = true\par
+let isRaining = false\par
+let isHungry = false\par
+let isMarried = true\par
+let truValue = 4 > 3    // true\par
+let falseValue = 4 < 3  // false\par
+We agreed that boolean values are either true or false.\par
+\par
+Truthy values\par
+All numbers(positive and negative) are truthy except zero\par
+All strings are truthy except an empty string ('')\par
+The boolean true\par
+Falsy values\par
+0\par
+0n\par
+null\par
+undefined\par
+NaN\par
+the boolean false\par
+'', "", ``, empty string\par
+It is good to remember those truthy values and falsy values. In later section, we will use them with conditions to make decisions.\par
+\par
+Undefined\par
+If we declare a variable and if we do not assign a value, the value will be undefined. In addition to this, if a function is not returning the value, it will be undefined.\par
+\par
+let firstName\par
+console.log(firstName) //not defined, because it is not assigned to a value yet\par
+Null\par
+let empty = null\par
+console.log(empty) // -> null , means no value\par
+Operators\par
+Assignment operators\par
+An equal sign in JavaScript is an assignment operator. It uses to assign a variable.\par
+\par
+let firstName = 'Asabeneh'\par
+let country = 'Finland'\par
+Assignment Operators\par
+\par
+Assignment operators\par
+\par
+Arithmetic Operators\par
+Arithmetic operators are mathematical operators.\par
+\par
+Addition(+): a + b\par
+Subtraction(-): a - b\par
+Multiplication(*): a * b\par
+Division(/): a / b\par
+Modulus(%): a % b\par
+Exponential(**): a ** b\par
+let numOne = 4\par
+let numTwo = 3\par
+let sum = numOne + numTwo\par
+let diff = numOne - numTwo\par
+let mult = numOne * numTwo\par
+let div = numOne / numTwo\par
+let remainder = numOne % numTwo\par
+let powerOf = numOne ** numTwo\par
+\par
+console.log(sum, diff, mult, div, remainder, powerOf) // 7,1,12,1.33,1, 64\par
+const PI = 3.14\par
+let radius = 100          // length in meter\par
+\par
+//Let us calculate area of a circle\par
+const areaOfCircle = PI * radius * radius\par
+console.log(areaOfCircle)  //  314 m\par
+\par
+\par
+const gravity = 9.81      // in m/s2\par
+let mass = 72             // in Kilogram\par
+\par
+// Let us calculate weight of an object\par
+const weight = mass * gravity\par
+console.log(weight)        // 706.32 N(Newton)\par
+\par
+const boilingPoint = 100  // temperature in oC, boiling point of water\par
+const bodyTemp = 37       // body temperature in oC\par
+\par
+\par
+// Concatenating string with numbers using string interpolation\par
+/*\par
+ The boiling point of water is 100 oC.\par
+ Human body temperature is 37 oC.\par
+ The gravity of earth is 9.81 m/s2.\par
+ */\par
+console.log(\par
+  `The boiling point of water is $\{boilingPoint\} oC.\\nHuman body temperature is $\{bodyTemp\} oC.\\nThe gravity of earth is $\{gravity\} m / s2.`\par
+)\par
+Comparison Operators\par
+In programming we compare values, we use comparison operators to compare two values. We check if a value is greater or less or equal to other value.\par
+\par
+Comparison Operators Example: Comparison Operators\par
+\par
+console.log(3 > 2)              // true, because 3 is greater than 2\par
+console.log(3 >= 2)             // true, because 3 is greater than 2\par
+console.log(3 < 2)              // false,  because 3 is greater than 2\par
+console.log(2 < 3)              // true, because 2 is less than 3\par
+console.log(2 <= 3)             // true, because 2 is less than 3\par
+console.log(3 == 2)             // false, because 3 is not equal to 2\par
+console.log(3 != 2)             // true, because 3 is not equal to 2\par
+console.log(3 == '3')           // true, compare only value\par
+console.log(3 === '3')          // false, compare both value and data type\par
+console.log(3 !== '3')          // true, compare both value and data type\par
+console.log(3 != 3)             // false, compare only value\par
+console.log(3 !== 3)            // false, compare both value and data type\par
+console.log(0 == false)         // true, equivalent\par
+console.log(0 === false)        // false, not exactly the same\par
+console.log(0 == '')            // true, equivalent\par
+console.log(0 == ' ')           // true, equivalent\par
+console.log(0 === '')           // false, not exactly the same\par
+console.log(1 == true)          // true, equivalent\par
+console.log(1 === true)         // false, not exactly the same\par
+console.log(undefined == null)  // true\par
+console.log(undefined === null) // false\par
+console.log(NaN == NaN)         // false, not equal\par
+console.log(NaN === NaN)        // false\par
+console.log(typeof NaN)         // number\par
+\par
+console.log('mango'.length == 'avocado'.length)  // false\par
+console.log('mango'.length != 'avocado'.length)  // true\par
+console.log('mango'.length < 'avocado'.length)   // true\par
+console.log('milk'.length == 'meat'.length)      // true\par
+console.log('milk'.length != 'meat'.length)      // false\par
+console.log('tomato'.length == 'potato'.length)  // true\par
+console.log('python'.length > 'dragon'.length)   // false\par
+Try to understand the above comparisons with some logic. Remembering without any logic might be difficult. JavaScript is somehow a wired kind of programming language. JavaScript code run and give you a result but unless you are good at it may not be the desired result.\par
+\par
+As rule of thumb, if a value is not true with == it will not be equal with ===. Using === is safer than using ==. The following link has an exhaustive list of comparison of data types.\par
+\par
+Logical Operators\par
+The following symbols are the common logical operators: &&(ampersand) , ||(pipe) and !(negation). The && operator gets true only if the two operands are true. The || operator gets true either of the operand is true. The ! operator negates true to false and false to true.\par
+\par
+// && ampersand operator example\par
+\par
+const check = 4 > 3 && 10 > 5         // true && true -> true\par
+const check = 4 > 3 && 10 < 5         // true && false -> false\par
+const check = 4 < 3 && 10 < 5         // false && false -> false\par
+\par
+// || pipe or operator, example\par
+\par
+const check = 4 > 3 || 10 > 5         // true  || true -> true\par
+const check = 4 > 3 || 10 < 5         // true  || false -> true\par
+const check = 4 < 3 || 10 < 5         // false || false -> false\par
+\par
+//! Negation examples\par
+\par
+let check = 4 > 3                     // true\par
+let check = !(4 > 3)                  //  false\par
+let isLightOn = true\par
+let isLightOff = !isLightOn           // false\par
+let isMarried = !false                // true\par
+Increment Operator\par
+In JavaScript we use the increment operator to increase a value stored in a variable. The increment could be pre or post increment. Let us see each of them:\par
+\par
+Pre-increment\par
+let count = 0\par
+console.log(++count)        // 1\par
+console.log(count)          // 1\par
+Post-increment\par
+let count = 0\par
+console.log(count++)        // 0\par
+console.log(count)          // 1\par
+We use most of the time post-increment. At least you should remember how to use post-increment operator.\par
+\par
+Decrement Operator\par
+In JavaScript we use the decrement operator to decrease a value stored in a variable. The decrement could be pre or post decrement. Let us see each of them:\par
+\par
+Pre-decrement\par
+let count = 0\par
+console.log(--count) // -1\par
+console.log(count)  // -1\par
+Post-decrement\par
+let count = 0\par
+console.log(count--) // 0\par
+console.log(count)   // -1\par
+Ternary Operators\par
+Ternary operator allows to write a condition. Another way to write conditionals is using ternary operators. Look at the following examples:\par
+\par
+let isRaining = true\par
+isRaining\par
+  ? console.log('You need a rain coat.')\par
+  : console.log('No need for a rain coat.')\par
+isRaining = false\par
+\par
+isRaining\par
+  ? console.log('You need a rain coat.')\par
+  : console.log('No need for a rain coat.')\par
+You need a rain coat.\par
+No need for a rain coat.\par
+let number = 5\par
+number > 0\par
+  ? console.log(`$\{number\} is a positive number`)\par
+  : console.log(`$\{number\} is a negative number`)\par
+number = -5\par
+\par
+number > 0\par
+  ? console.log(`$\{number\} is a positive number`)\par
+  : console.log(`$\{number\} is a negative number`)\par
+5 is a positive number\par
+-5 is a negative number\par
+Operator Precedence\par
+I would like to recommend you to read about operator precedence from this link\par
+\par
+Window Methods\par
+Window alert() method\par
+As you have seen at very beginning alert() method displays an alert box with a specified message and an OK button. It is a builtin method and it takes on argument.\par
+\par
+alert(message)\par
+alert('Welcome to 30DaysOfJavaScript')\par
+Do not use too much alert because it is destructing and annoying, use it just to test.\par
+\par
+Window prompt() method\par
+The window prompt methods display a prompt box with an input on your browser to take input values and the input data can be stored in a variable. The prompt() method takes two arguments. The second argument is optional.\par
+\par
+prompt('required text', 'optional text')\par
+let number = prompt('Enter number', 'number goes here')\par
+console.log(number)\par
+Window confirm() method\par
+The confirm() method displays a dialog box with a specified message, along with an OK and a Cancel button. A confirm box is often used to ask permission from a user to execute something. Window confirm() takes a string as an argument. Clicking the OK yields true value, whereas clicking the Cancel button yields false value.\par
+\par
+const agree = confirm('Are you sure you like to delete? ')\par
+console.log(agree) // result will be true or false based on what you click on the dialog box\par
+These are not all the window methods we will have a separate section to go deep into window methods.\par
+\par
+Date Object\par
+Time is an important thing. We like to know the time a certain activity or event. In JavaScript current time and date is created using JavaScript Date Object. The object we create using Date object provides many methods to work with date and time.The methods we use to get date and time information from a date object values are started with a word get because it provide the information. getFullYear(), getMonth(), getDate(), getDay(), getHours(), getMinutes, getSeconds(), getMilliseconds(), getTime(), getDay()\par
+\par
+Date time Object\par
+\par
+Creating a time object\par
+Once we create time object. The time object will provide information about time. Let us create a time object\par
+\par
+const now = new Date()\par
+console.log(now) // Sat Jan 04 2020 00:56:41 GMT+0200 (Eastern European Standard Time)\par
+We have created a time object and we can access any date time information from the object using the get methods we have mentioned on the table.\par
+\par
+Getting full year\par
+Let's extract or get the full year from a time object.\par
+\par
+const now = new Date()\par
+console.log(now.getFullYear()) // 2020\par
+Getting month\par
+Let's extract or get the month from a time object.\par
+\par
+const now = new Date()\par
+console.log(now.getMonth()) // 0, because the month is January,  month(0-11)\par
+Getting date\par
+Let's extract or get the date of the month from a time object.\par
+\par
+const now = new Date()\par
+console.log(now.getDate()) // 4, because the day of the month is 4th,  day(1-31)\par
+Getting day\par
+Let's extract or get the day of the week from a time object.\par
+\par
+const now = new Date()\par
+console.log(now.getDay()) // 6, because the day is Saturday which is the 7th day\par
+//  Sunday is 0, Monday is 1 and Saturday is 6\par
+// Getting the weekday as a number (0-6)\par
+Getting hours\par
+Let's extract or get the hours from a time object.\par
+\par
+const now = new Date()\par
+console.log(now.getHours()) // 0, because the time is 00:56:41\par
+Getting minutes\par
+Let's extract or get the minutes from a time object.\par
+\par
+const now = new Date()\par
+console.log(now.getMinutes()) // 56, because the time is 00:56:41\par
+Getting seconds\par
+Let's extract or get the seconds from a time object.\par
+\par
+const now = new Date()\par
+console.log(now.getSeconds()) // 41, because the time is 00:56:41\par
+Getting time\par
+This method give time in milliseconds starting from January 1, 1970. It is also know as Unix time. We can get the unix time in two ways:\par
+\par
+Using getTime()\par
+const now = new Date() //\par
+console.log(now.getTime()) // 1578092201341, this is the number of seconds passed from January 1, 1970 to January 4, 2020 00:56:41\par
+Using Date.now()\par
+const allSeconds = Date.now() //\par
+console.log(allSeconds) // 1578092201341, this is the number of seconds passed from January 1, 1970 to January 4, 2020 00:56:41\par
+\par
+const timeInSeconds = new Date().getTime()\par
+console.log(allSeconds == timeInSeconds) // true\par
+Let us format these values to a human readable time format. Example:\par
+\par
+const now = new Date()\par
+const year = now.getFullYear() // return year\par
+const month = now.getMonth() + 1 // return month(0 - 11)\par
+const date = now.getDate() // return date (1 - 31)\par
+const hours = now.getHours() // return number (0 - 23)\par
+const minutes = now.getMinutes() // return number (0 -59)\par
+\par
+console.log(`$\{date\}/$\{month\}/$\{year\} $\{hours\}:$\{minutes\}`) // 4/1/2020 0:56\par
+\f0\u-10180?\u-8427?\f1  You have boundless energy. You have just completed day 3 challenges and you are three steps a head in to your way to greatness. Now do some exercises for your brain and for your muscle.\par
+\par
+\f0\u-10179?\u-9029?\f1  Day 3: Exercises\par
+Exercises: Level 1\par
+Declare firstName, lastName, country, city, age, isMarried, year variable and assign value to it and use the typeof operator to check different data types.\par
+\par
+Check if type of '10' is equal to 10\par
+\par
+Check if parseInt('9.8') is equal to 10\par
+\par
+Boolean value is either true or false.\par
+\par
+Write three JavaScript statement which provide truthy value.\par
+Write three JavaScript statement which provide falsy value.\par
+Figure out the result of the following comparison expression first without using console.log(). After you decide the result confirm it using console.log()\par
+\par
+4 > 3\par
+4 >= 3\par
+4 < 3\par
+4 <= 3\par
+4 == 4\par
+4 === 4\par
+4 != 4\par
+4 !== 4\par
+4 != '4'\par
+4 == '4'\par
+4 === '4'\par
+Find the length of python and jargon and make a falsy comparison statement.\par
+Figure out the result of the following expressions first without using console.log(). After you decide the result confirm it by using console.log()\par
+\par
+4 > 3 && 10 < 12\par
+4 > 3 && 10 > 12\par
+4 > 3 || 10 < 12\par
+4 > 3 || 10 > 12\par
+!(4 > 3)\par
+!(4 < 3)\par
+!(false)\par
+!(4 > 3 && 10 < 12)\par
+!(4 > 3 && 10 > 12)\par
+!(4 === '4')\par
+There is no 'on' in both dragon and python\par
+Use the Date object to do the following activities\par
+\par
+What is the year today?\par
+What is the month today as a number?\par
+What is the date today?\par
+What is the day today as a number?\par
+What is the hours now?\par
+What is the minutes now?\par
+Find out the numbers of seconds elapsed from January 1, 1970 to now.\par
+Exercises: Level 2\par
+Write a script that prompt the user to enter base and height of the triangle and calculate an area of a triangle (area = 0.5 x b x h).\par
+\par
+Enter base: 20\par
+Enter height: 10\par
+The area of the triangle is 100\par
+Write a script that prompt the user to enter side a, side b, and side c of the triangle and and calculate the perimeter of triangle (perimeter = a + b + c)\par
+\par
+Enter side a: 5\par
+Enter side b: 4\par
+Enter side c: 3\par
+The perimeter of the triangle is 12\par
+Get length and width using prompt and calculate an area of rectangle (area = length x width and the perimeter of rectangle (perimeter = 2 x (length + width))\par
+\par
+Get radius using prompt and calculate the area of a circle (area = pi x r x r) and circumference of a circle(c = 2 x pi x r) where pi = 3.14.\par
+\par
+Calculate the slope, x-intercept and y-intercept of y = 2x -2\par
+\par
+Slope is m = (y2-y1)/(x2-x1). Find the slope between point (2, 2) and point(6,10)\par
+\par
+Compare the slope of above two questions.\par
+\par
+Calculate the value of y (y = x2 + 6x + 9). Try to use different x values and figure out at what x value y is 0.\par
+\par
+Writ a script that prompt a user to enter hours and rate per hour. Calculate pay of the person?\par
+\par
+Enter hours: 40\par
+Enter rate per hour: 28\par
+Your weekly earning is 1120\par
+If the length of your name is greater than 7 say, your name is long else say your name is short.\par
+\par
+Compare your first name length and your family name length and you should get this output.\par
+\par
+let firstName = 'Asabeneh'\par
+let lastName = 'Yetayeh'\par
+Your first name, Asabeneh is longer than your family name, Yetayeh\par
+Declare two variables myAge and yourAge and assign them initial values and myAge and yourAge.\par
+\par
+let myAge = 250\par
+let yourAge = 25\par
+I am 225 years older than you.\par
+Using prompt get the year the user was born and if the user is 18 or above allow the user to drive if not tell the user to wait a certain amount of years.\par
+\par
+Enter birth year: 1995\par
+You are 25. You are old enough to drive\par
+\par
+Enter birth year: 2005\par
+You are 15. You will be allowed to drive after 3 years.\par
+Write a script that prompt the user to enter number of years. Calculate the number of seconds a person can live. Assume some one lives just hundred years\par
+\par
+Enter number of years you live: 100\par
+You lived 3153600000 seconds.\par
+Create a human readable time format using the Date time object\par
+\par
+YYYY-MM-DD HH:mm\par
+DD-MM-YYYY HH:mm\par
+DD/MM/YYYY HH:mm\par
+Exercises: Level 3\par
+Create a human readable time format using the Date time object. The hour and the minute should be all the time two digits(7 hours should be 07 and 5 minutes should be 05 )\par
+YYY-MM-DD HH:mm eg. 20120-01-02 07:05\par
+}
+ 
