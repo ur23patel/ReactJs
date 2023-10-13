@@ -10,6 +10,11 @@ import PropsInClassCompo from './../Components/ClassComponent/07PropsInClassComp
 import StateLifeCycleInClassCompo from './../Components/ClassComponent/09StateLifeCycleInClassCompo.jsx';
 import StateLifeCycleInClassCompoLoader from './../Components/ClassComponent/10statelifecycleloader';
 import ConditionalRendering from './../Components/ClassComponent/12ConditionalRendering';
+import ListKeysClassCompo from './../Components/ClassComponent/13ListKeysClassCompo.jsx';
+import DymanicSubMenu from './../Components/ClassComponent/14DynamicSubMenu';
+import SpreadVsRest from './../Components/ClassComponent/15ClassCompoSpreadRest';
+import ControlledCompo from './../Components/ClassComponent/16ControlledCompo';
+import UnControlledCompo from './../Components/ClassComponent/17UncontrolledCompo';
 
 const ClassComponentRoute = () => {
     const routes = useRoutes([
@@ -44,6 +49,21 @@ const ClassComponentRoute = () => {
                 },{
                     path: "classcompoconditionalrender",
                     element: <ConditionalRendering />,
+                },{
+                    path: "classcompolistkey",
+                    element: <ListKeysClassCompo />,
+                },{
+                    path: "dynamicsubmenu",
+                    element: <DymanicSubMenu />,
+                },{
+                    path: "spreadvsres",
+                    element: <SpreadVsRest />,
+                },{
+                    path: "controlledcompo",
+                    element: <ControlledCompo />,
+                },{
+                    path: "uncontrolledcompo",
+                    element: <UnControlledCompo />,
                 },
             ]
         }
