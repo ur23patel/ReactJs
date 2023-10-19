@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <script>
+        function resolveAfter2Seconds(params) {
+            console.log("called inside resolveAfter2Seconds");
+            // return "a"
+                // setTimeout(() => {
+                //     console.log("called inside timout");
+                // }, 2000);
+            return new Promise(resolve => {
+                // setTimeout(() => {
+                    console.log("called inside timout");
+                    // resolve("resolve")
+                    fetch("https://jayramin.000webhostapp.com/allusers").then((res) => res.json()).then((response) => {
+                        resolve(response.Data);
+                        return response
+                    })
+                // }, 2000);
+            })
+        }
+        async function asyncCall() {
+            console.log("called asyncCall before resolved");
+            const result = await resolveAfter2Seconds();
+            // const result = await resolveAfter2Seconds();
+            console.log("result",result);
+            console.log("called asyncCall after resolved");
+        }
+        // function asyncCall() {
+        //     // console.log("called asyncCall before resolved");
+        //     const result = resolveAfter2Seconds();
+        //     console.log("result",result);
+        //     console.log("called asyncCall after resolved");
+        // }
+        asyncCall()
+    </script>
+
+</body>
+
+</html>

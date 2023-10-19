@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ol id="disp">
+
+    </ol>
+    
+    <script>
+        // fetch(url).then(json).then(result)
+        // fetch("https://jayramin.000webhostapp.com/allusers").then((response)=> console.log(response))
+        // fetch("https://jayramin.000webhostapp.com/allusers").then((response)=> { return response.json()})
+        fetch("https://jayramin.000webhostapp.com/allusers").then((response)=> response.json()).then((result)=>{
+            // console.log(result);
+            let htmlData = "";
+            // (Object.entries(result)).forEach(element => {
+            (result.Data).forEach(element => {
+                console.log(element);
+                // console.log(element.username);
+                htmlData += `<li>${element.username} ${element.email}</li>`;
+            });
+            document.getElementById("disp").innerHTML=htmlData
+        })
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        const object1 = {
+            a: 'somestring',
+            b: 42,
+        };
+
+        console.log(Object.entries(object1));
+        // console.log(Object.keys(object1));
+        // console.log(Object.values(object1));
+
+        for (const [key, value] of Object.entries(object1)) {
+            console.log(`${key}: ${value}`);
+        }
+    </script>
+</body>
+
+</html>

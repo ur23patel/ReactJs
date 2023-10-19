@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div id="disp"></div>
+    <script>
+        valueOfInp = "TOPS"
+        // basicHTML = "<input type="text" name="" id="">"
+        // basicHTML = '<table>
+        //     <tr><td><input type="text" name="" value="'+valueOfInp+'" id=""></td></tr>
+        //     </table>'
+        basicHTML = `<table>
+            <tr><td><input type="text" name="" value="${valueOfInp}" id=""></td></tr>
+            </table>`
+        // basicHTML = '<table>'
+        // basicHTML += '<tr><td><input type="text" name="" value="' + valueOfInp + '" id=""></td></tr>'
+        // basicHTML += '</table>'
+        document.getElementById("disp").innerHTML = basicHTML
+    </script>
+
+</body>
+
+</html>

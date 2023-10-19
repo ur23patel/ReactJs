@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    Closures function
+    <p>function returns function</p>
+    <script>
+        // function mainfunction(params) {
+        //     console.log("called main function");
+        //     const childfunction=()=>{
+        //         console.log("called child function");
+        //     }
+        //     return childfunction
+        // }
+        // // mainfunction()
+        // // console.log(mainfunction);
+        // console.log(mainfunction());
+        // console.log(mainfunction()());
+        // function foo(outer_arg) {
+        //     console.log(outer_arg);
+        //     function inner(inner_arg) {
+        //         return outer_arg + inner_arg;
+        //     }
+        //     return inner;
+        // }
+        // let get_func_inner = foo(5);
+        // console.log(get_func_inner(50));
+        // console.log(get_func_inner(4));
+        // console.log(get_func_inner(3));
+        // closure example
+
+        function calculate(x) {
+            // console.log("x before addition",x);
+            
+            charges = 3
+            x = x+charges 
+            // console.log("x after addition",x);
+            function multiply(y) {
+                return x * y;
+            }
+            return multiply;
+        }
+
+        const multiply3 = calculate(3);
+        console.log(multiply3(3));
+        console.log(multiply3(15));
+        const multiply4 = calculate(2);
+        console.log(multiply4(15));
+
+        // console.log(multiply3); // returns calculate function definition
+        // console.log(multiply3()); // NaN
+
+        // console.log(multiply3(6)); // 18
+        // console.log(multiply4(2)); // 8
+    </script>
+</body>
+
+</html>

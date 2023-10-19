@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h2>Closure</h2>
+    <p>A closure is the combination of a function bundled together (enclosed) with references to its surrounding state
+        (the lexical environment). In other words, a closure gives you access to an outer function's scope from an inner
+        function. In JavaScript, closures are created every time a function is created, at function creation time.</p>
+    <script>
+        // for (let index = 0; index < 10; index++) {
+        //     console.log(index);
+        // }
+        // console.log(index);
+        // for (let aindex = 0; aindex < 10; aindex++) {
+        //     console.log(aindex);
+        // }
+        // console.log(aindex);
+        // for (var aindex = 0; aindex < 10; aindex++) {
+        //     console.log(aindex);
+        // }
+        // console.log(aindex);
+        // let dataOutside ="something"
+        // function testing() {
+        //     let dataInside ="something let"
+        //     var dataInsideVar ="something var"
+        //     console.log(dataInside);
+        //     console.log(dataInsideVar);
+        // }
+        // // console.log(dataInside);
+        // console.log(dataInsideVar);
+        // testing()
+        // console.log("after function calling",data);
+        // function init() {
+        //     var name = "Mozilla"; // name is a local variable created by init
+        //     function displayName() {
+        //         // displayName() is the inner function, that forms the closure
+        //         console.log(name); // use variable declared in the parent function
+        //     }
+        //     displayName();
+        // }
+        // init();
+
+        // function makeFunc() {
+        //     const name = "Mozilla";
+        //     function displayName() {
+        //         console.log(name);
+        //     }
+        //     return displayName;
+        // }
+
+        // const myFunc = makeFunc();
+        // myFunc();
+
+
+        // function testing() {
+        //     console.log("called");
+        //     return "ret"
+        // }
+        // console.log(testing);
+        // console.log(testing());
+
+        function makeAdder(x) {
+            console.log("inside main x",x);
+            return function (y) {
+                console.log("inside main y",y);
+                return x + y;
+            };
+        }
+
+        const add5 = makeAdder(5);
+        console.log(add5(15));
+        // const add10 = makeAdder(10);
+
+// console.log(add5(2)); // 7
+// console.log(add10(2)); // 12
+    </script>
+</body>
+
+</html>

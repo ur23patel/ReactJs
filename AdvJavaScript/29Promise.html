@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+        // let promise = new Promise(function (resolve, reject) {
+        //     //do something
+        // });
+
+
+        // const count = true;
+        const count =false;
+
+        let countValue = new Promise(function (resolve, reject) {
+            if (count) {
+                resolve("There is a count value.");
+            } else {
+                reject("There is no count value");
+            }
+        });
+
+        // console.log(countValue);
+        countValue.then(function successValue(result) {
+            console.log(result);
+        }).then(function successValue1() {
+            console.log("You can call multiple functions this way.");
+        }).catch(
+            function errorValue(result) {
+                console.log(result);
+            }
+        );
+        
+// api().then(function(result) {
+//     return api2() ;
+// }).then(function(result2) {
+//     return api3();
+// }).then(function(result3) {
+//     // do work
+// }).catch(function(error) {
+//     //handle any error that may occur before this point 
+// });
+    </script>
+
+</body>
+
+</html>
+<P></P>
