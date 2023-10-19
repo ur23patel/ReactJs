@@ -15,6 +15,9 @@ import DymanicSubMenu from './../Components/ClassComponent/14DynamicSubMenu';
 import SpreadVsRest from './../Components/ClassComponent/15ClassCompoSpreadRest';
 import ControlledCompo from './../Components/ClassComponent/16ControlledCompo';
 import UnControlledCompo from './../Components/ClassComponent/17UncontrolledCompo';
+import CompositionVsInheritance from './../Components/ClassComponent/18CompositionVsInheritance.jsx';
+import StateLifting from './../Components/ClassComponent/20StateLifting/mainfile';
+import HOCInClass from './../Components/ClassComponent/21HOC_in_classCompo/mainCompo';
 
 const ClassComponentRoute = () => {
     const routes = useRoutes([
@@ -64,6 +67,15 @@ const ClassComponentRoute = () => {
                 },{
                     path: "uncontrolledcompo",
                     element: <UnControlledCompo />,
+                },{
+                    path: "compositionvsinheritance",
+                    element: <CompositionVsInheritance />,
+                },{
+                    path: "statelifting",
+                    element: <StateLifting />,
+                },{
+                    path: "hoc",
+                    element: <HOCInClass />,
                 },
             ]
         }
