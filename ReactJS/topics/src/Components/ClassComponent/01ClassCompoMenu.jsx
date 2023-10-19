@@ -21,6 +21,9 @@ class ClassCompoMenu extends Component {
                             <li> <Link to="spreadvsres">Spread Vs Rest ...</Link> </li>
                             <li> <Link to="controlledcompo">Controlled Compo</Link> </li>
                             <li> <Link to="uncontrolledcompo">Uncontrolled Compo</Link> </li>
+                            <li> <Link to="compositionvsinheritance">Composition Vs Inheritance</Link> </li>
+                            <li> <Link to="statelifting">State Lifting</Link> </li>
+                            <li> <Link to="hoc">HOC</Link> </li>
                         </ol>
                     </div>
                 </div>
