@@ -8,6 +8,8 @@ const FunctionalCompoMenu = () => {
                 <div className="col-ld-4 offset-md-6">
                     <ol>
                         <li> <Link to="functionalcompointro">Functional Components Intro</Link> </li>
+                        <li> <Link to="functionalcompostate">State in Functional Components</Link> </li>
+                        <li> <Link to="functionalcompoprops">Props in Functional Components</Link> </li>
                     </ol>
                 </div>
             </div>
